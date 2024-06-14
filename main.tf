@@ -10,11 +10,12 @@ terraform {
 
 provider "aws" {
         region = "us-east-1" 
-        #profile = "default"
+        profile = "default"
 	}
 
 resource "aws_instance" "milindinfra" {
 	ami = "ami-0c2b8ca1dad447f8a" 
 	instance_type = "t2.micro"
-	vpc_id = "vpc-0a726a85ee2da573d"
+	vpc_id           = "vpc-0a726a85ee2da573d" # Replace with your VPC ID
+	subnet_id        = "vpc-0a726a85ee2da573d" # Replace with your Subnet ID
 }
