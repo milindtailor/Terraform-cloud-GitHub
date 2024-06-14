@@ -16,5 +16,5 @@ provider "aws" {
 resource "aws_instance" "milindinfra" {
 	ami = "ami-0c2b8ca1dad447f8a" 
 	instance_type = "t2.micro"
-	subnet_id        = "vpc-0a726a85ee2da573d" # Replace with your Subnet ID
+	subnet_id        = "subnet-07e938dad10f91737" # Replace with your Subnet ID
 }
